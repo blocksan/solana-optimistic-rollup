@@ -1,0 +1,13 @@
+[package]
+name = "batcher-node"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+solana-program = "1.18.22"
+solana-client = "1.10.32"  # Ensure this is the correct version for your setup
+solana-sdk = "1.10.32"
+
+[[bin]]
+name = "batcher-node"
+path = "src/main.rs"

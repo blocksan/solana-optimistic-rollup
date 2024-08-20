@@ -88,7 +88,7 @@ fn build_merkel_tree(hashes: Vec<String>) -> Option<String>{
 }
 
 
-fn prepare_solana_transaction(
+pub fn prepare_solana_transaction(
     client: &RpcClient,
     payer: &Keypair,
     instruction: Vec<Instruction>,
